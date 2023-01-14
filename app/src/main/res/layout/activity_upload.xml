@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/pick"
+        android:layout_width="145dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Upload"
+        android:backgroundTint="#E1E1E1"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_file_upload_24"
+
+        />
+    <TextView
+        android:id="@+id/totalPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVeiw_Gallery_Images"
+        android:layout_width="match_parent"
+        android:layout_height="532dp"
+        android:layout_marginTop="5dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="191dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#E1E1E1"
+        android:drawableLeft="@drawable/ic_baseline_check_box_24"
+        android:text="Predict"
+        android:textColor="@color/black"
+        android:visibility="invisible"/>
+
+</LinearLayout>

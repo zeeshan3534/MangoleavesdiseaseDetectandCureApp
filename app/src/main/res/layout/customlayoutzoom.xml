@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Text"
+        android:textSize="20sp"
+        />
+    <ImageView
+        android:id="@+id/image_view_dialog"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/text_dialog"
+        android:scaleType = "centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        />
+    <Button
+        android:id="@+id/btl_close_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/image_view_dialog"
+        android:text="Close"
+        android:textColor="@color/black"
+        />
+
+
+</RelativeLayout>
