@@ -2,41 +2,41 @@ package com.ice.mangoddetector;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.os.Handler;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.airbnb.lottie.LottieAnimationView;
+
 
 public class MainActivity extends AppCompatActivity {
-    Button button,button1;
 
+    private static int  a7 = 2500;
+    TextView imageView;
+    LottieAnimationView lottie;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        button = (Button)  findViewById(R.id.signup);
-        button1 = (Button)  findViewById(R.id.signin);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Signin();
-            }
-        });
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Signuppage();
-            }
-        });
 
-    }
-    private  void Signin(){
-        Intent intent = new Intent(this,Signin.class);
-        startActivity(intent);
-    }
+        imageView = findViewById(R.id.appname);
+        lottie = findViewById(R.id.lottie);
 
-    private void Signuppage(){
-        Intent intent = new Intent(this,Signup.class);
-        startActivity(intent);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent i =new Intent(getApplicationContext(), LoginActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(i);
+            }
+        },a7);
+
     }
 }

@@ -32,7 +32,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         View view = inflater.inflate(R.layout.custom_single_image,parent,false);
 
 
-        return new ViewHolder(view, countOfImagesWhenRemoved,itemClickListner);
+        return new ViewHolder(view,countOfImagesWhenRemoved,itemClickListner);
     }
 
     @Override
@@ -65,7 +65,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
 
 
-        public ViewHolder(@NonNull View itemView, CountOfImagesWhenRemoved countOfImagesWhenRemoved , itemClickListner itemClickListner) {
+        public ViewHolder(@NonNull View itemView,CountOfImagesWhenRemoved countOfImagesWhenRemoved, itemClickListner itemClickListner) {
             super(itemView);
             this.countOfImagesWhenRemoved = countOfImagesWhenRemoved;
             imageView= itemView.findViewById(R.id.image);
