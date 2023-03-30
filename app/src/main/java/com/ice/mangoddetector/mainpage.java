@@ -15,12 +15,15 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -33,18 +36,26 @@ public class mainpage extends AppCompatActivity {
     RecyclerView featuredRecycler;
     RecyclerView.Adapter adapter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
 
+
         String check = (String) intent.getExtras().getString("check");
-        System.out.println(check+"dfdf");
+        String username = (String) intent.getExtras().getString("username");
+
+        System.out.println(username+"dfdf");
 
         if (Objects.equals(check, "offline")){
             System.out.println(check+"fhdf");
             Toast.makeText(this,"In this mode You cannot STORE your report",Toast.LENGTH_LONG).show();
+        }else if(Objects.equals(check, "login")){
+            Toast.makeText(this,"Logged In successfully",Toast.LENGTH_LONG).show();
+
         }
 
 
@@ -54,13 +65,15 @@ public class mainpage extends AppCompatActivity {
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED);
 
         setContentView(R.layout.activity_mainpage);
-        TextView internet = findViewById(R.id.internet);
+        ImageView internet = findViewById(R.id.internet);
+        TextView username1 = findViewById(R.id.username1);
 
         if (connected){
-            internet.setText("Internet Connect");
+            username1.setText(username);
         }
         else{
-            internet.setText("Internet not Connect ");
+            username1.setText("Internet not Connect ");
+            internet.setVisibility(View.INVISIBLE);
         }
 
         //hook
@@ -78,6 +91,7 @@ public class mainpage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent gallary = new Intent(mainpage.this,Upload.class);
+                gallary.putExtra("username",username);
                 startActivity(gallary);
 
             }
@@ -94,7 +108,7 @@ public class mainpage extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                diagnosespage();
+                diagnosespage(username);
             }
         });
     }
@@ -139,8 +153,9 @@ public class mainpage extends AppCompatActivity {
         Intent intent = new Intent(this,AboutDiseases.class);
         startActivity(intent);
     }
-    private void diagnosespage(){
+    private void diagnosespage(String username){
         Intent intent = new Intent(this,Diagnose.class);
+        intent.putExtra("username",username);
         startActivity(intent);
     }
 

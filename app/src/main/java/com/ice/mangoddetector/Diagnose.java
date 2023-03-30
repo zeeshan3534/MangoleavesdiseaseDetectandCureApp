@@ -1,6 +1,7 @@
 package com.ice.mangoddetector;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -43,8 +44,12 @@ public class Diagnose extends AppCompatActivity {
 
         boolean connected = (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED);
+
+        Intent intent = getIntent();
+
+        String username = (String) intent.getExtras().getString("username");
         if (connected){
-            text2.setText("Internet Connect ");
+            text2.setText(username);
         }else{
             text2.setText("Internet not Connect ");
         };

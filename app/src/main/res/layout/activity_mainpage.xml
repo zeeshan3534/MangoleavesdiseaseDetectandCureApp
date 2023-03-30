@@ -11,24 +11,42 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp">
+        android:layout_height="85dp"
+        android:padding="20dp"
+        android:background="@color/navigation">
 
         <ImageView
             android:layout_width="311dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
+            android:scaleType="fitStart"
             android:src="@drawable/logo_black" />
 
         <TextView
-            android:id="@+id/internet"
-            android:layout_width="wrap_content"
+            android:layout_width="57dp"
             android:layout_height="wrap_content"
+            android:id="@+id/username1"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/internet"
+            android:gravity="end"
+            android:text="Ali"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/internet"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="2dp"
-            android:text="TextView"
-            android:textSize="10sp"/>
+            android:text=""
+            android:textSize="20sp"
+            android:background="@drawable/circle"
+            android:src="@drawable/mango"/>
 
     </RelativeLayout>
 

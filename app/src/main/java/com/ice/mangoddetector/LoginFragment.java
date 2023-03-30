@@ -52,7 +52,7 @@ public class LoginFragment extends Fragment {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    System.out.println(password.toString());
                     Checkin();
 
                 }
@@ -91,7 +91,7 @@ public class LoginFragment extends Fragment {
                     newhash = (HashMap<String,String>)map.get(newemail.get(0)) ;
 
                     if (String.valueOf(newhash.get("Password")).equals(password.getText().toString())){
-                        newpage(true);
+                        newpage(true,newemail.get(0));
                     }else{
 //                        Toast.makeText(this,"Your password is incorrect",Toast.LENGTH_SHORT).show();
                         Toast.makeText(getContext(),"Password is Wrong", Toast.LENGTH_SHORT).show();
@@ -114,8 +114,10 @@ public class LoginFragment extends Fragment {
 //
     }
 
-    private void newpage(boolean b) {
+    private void newpage(boolean b,String username) {
         Intent intent = new Intent(getContext(), mainpage.class);
+        intent.putExtra("check","login");
+        intent.putExtra("username",username);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         ((Activity) getActivity()).overridePendingTransition(0, 0);

@@ -43,20 +43,23 @@ public class SignupFragment extends Fragment {
             repass = (EditText) root.findViewById(R.id.repass);
             btn =  root.findViewById(R.id.btn);
 
+
             Userdata = FirebaseDatabase.getInstance().getReference().child("users");
-            btn.setOnClickListener(new View.OnClickListener() {
+            if (username.getText().toString()!= null && email.getText().toString()!=null && password.getText().toString() != null && repass.getText().toString() !=null){
+                btn.setOnClickListener(new View.OnClickListener() {
                 @Override
 
                 public void onClick(View view) {
+                    System.out.println(email.getText().toString());
                     String var1 = email.getText().toString();
 
                     List<String> newemail = Arrays.asList(var1.split("@")) ;
 
                     if (password.getText().toString().equals(repass.getText().toString())){
-                        username.setText("");
-                        email.setText("");
-                        password.setText("");
-                        repass.setText("");
+//                        username.setText("");
+//                        email.setText("");
+//                        password.setText("");
+//                        repass.setText("");
                         InsertData(newemail.get(0));
                         Login();
 
@@ -65,6 +68,10 @@ public class SignupFragment extends Fragment {
                     }
                 }
             });
+            }else{
+                Toast.makeText(getContext(),"Your are not allowed to add empty field",Toast.LENGTH_LONG).show();
+            }
+
 
 
 

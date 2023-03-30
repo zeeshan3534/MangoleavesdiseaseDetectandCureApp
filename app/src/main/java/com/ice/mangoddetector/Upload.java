@@ -44,8 +44,9 @@ import java.util.List;
 
 public class Upload extends AppCompatActivity implements RecyclerAdapter.CountOfImagesWhenRemoved,RecyclerAdapter.itemClickListner{
     RecyclerView recyclerView;
-    TextView textView,text2;
+    TextView textView,text2,usernametext;
     Button pick,predict,ask;
+    ImageView userimage;
 
 
 
@@ -77,7 +78,20 @@ public class Upload extends AppCompatActivity implements RecyclerAdapter.CountOf
         predict = findViewById(R.id.button3);
         ask = findViewById(R.id.button6);
         text2  = findViewById(R.id.totalPhotos1);
+        usernametext = findViewById(R.id.username1);
+        userimage = findViewById(R.id.internet);
 
+        Intent intent = getIntent();
+
+
+        String username = (String) intent.getExtras().getString("username");
+        if (username!=null){
+            usernametext.setText(username);
+        }else{
+            usernametext.setText("Offline Mode");
+            userimage.setVisibility(View.INVISIBLE);
+
+        }
         String text = getIntent().getStringExtra("specie");
         if(text!=null){
             pick.setVisibility(View.VISIBLE);
@@ -93,6 +107,7 @@ public class Upload extends AppCompatActivity implements RecyclerAdapter.CountOf
             public void onClick(View view) {
 
                 Intent i = new Intent(Upload.this,DialogeBox.class);
+                i.putExtra("username",username);
                 startActivity(i);
             }
         });
