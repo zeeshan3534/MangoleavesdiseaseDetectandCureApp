@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE7F6E7"
-    android:backgroundTint="#C3F1C3"
+    android:background="@color/reportbackgroun"
     tools:context=".Report">
 
     <TextView
@@ -32,11 +31,27 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylerview"
         android:layout_width="match_parent"
-        android:layout_height="568dp"
+        android:layout_height="499dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-
         android:layout_centerInParent="true"
-        android:layout_marginTop="128dp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/recylerview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="109dp"
+        android:maxHeight="20dp"
+        android:text="Upload Report to Database" />
 
 </RelativeLayout>

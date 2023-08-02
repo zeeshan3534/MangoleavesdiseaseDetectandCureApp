@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "851686419187",
-    "firebase_url": "https://fypproject-a0dd7-default-rtdb.firebaseio.com",
-    "project_id": "fypproject-a0dd7",
-    "storage_bucket": "fypproject-a0dd7.appspot.com"
+    "project_number": "463282028020",
+    "firebase_url": "https://fyp-project-cs06-default-rtdb.firebaseio.com",
+    "project_id": "fyp-project-cs06",
+    "storage_bucket": "fyp-project-cs06.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:851686419187:android:be6c3396d95156ca542586",
+        "mobilesdk_app_id": "1:463282028020:android:733c609f13de5a25478da1",
         "android_client_info": {
-          "package_name": "com.ice.mangoddetector"
+          "package_name": "com.ice.mangosurveyor"
         }
       },
       "oauth_client": [
         {
-          "client_id": "851686419187-ta4omidsgj670mtccofuqbqf64hq8d4k.apps.googleusercontent.com",
+          "client_id": "463282028020-mdqkfrjrsga5flu6s87cg2039m4ji79i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ice.mangosurveyor",
+            "certificate_hash": "8a525f8c156941426d0f8a02b2745a242fc644e6"
+          }
+        },
+        {
+          "client_id": "463282028020-5fdb1rd0nebaofb89lgi42glvkqc7li9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDsHzja4R_vnxcM1YbUlP1yjVWc01vnlIo"
+          "current_key": "AIzaSyDzLLAJmeD893Mk537eBQvpN2Ax4jJmnGc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "851686419187-ta4omidsgj670mtccofuqbqf64hq8d4k.apps.googleusercontent.com",
+              "client_id": "463282028020-5fdb1rd0nebaofb89lgi42glvkqc7li9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -37,27 +45,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:851686419187:android:59b30c910c014864542586",
+        "mobilesdk_app_id": "1:463282028020:android:d490e3c93e9fcbbb478da1",
         "android_client_info": {
-          "package_name": "com.ice.mangodiseasesdetector"
+          "package_name": "com.ice.mangosurveyour"
         }
       },
       "oauth_client": [
         {
-          "client_id": "851686419187-ta4omidsgj670mtccofuqbqf64hq8d4k.apps.googleusercontent.com",
+          "client_id": "463282028020-59lq7qjrn20bv2l6afbgvr1ksev0da09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ice.mangosurveyour",
+            "certificate_hash": "94268c22a8d8d3068c24d24e5e6b5a16d95305b5"
+          }
+        },
+        {
+          "client_id": "463282028020-5fdb1rd0nebaofb89lgi42glvkqc7li9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDsHzja4R_vnxcM1YbUlP1yjVWc01vnlIo"
+          "current_key": "AIzaSyDzLLAJmeD893Mk537eBQvpN2Ax4jJmnGc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "851686419187-ta4omidsgj670mtccofuqbqf64hq8d4k.apps.googleusercontent.com",
+              "client_id": "463282028020-5fdb1rd0nebaofb89lgi42glvkqc7li9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

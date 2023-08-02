@@ -22,14 +22,15 @@
             android:id="@+id/featuretitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo"
+
+
             android:text="20sp" />
 
         <TextView
             android:id="@+id/featuretext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo" />
+             />
     </LinearLayout>
 
 

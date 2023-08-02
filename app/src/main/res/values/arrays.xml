@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mySpinnerItems">
+        <item>Province</item>
+        <item>punjab</item>
+        <item>sindh</item>
+        <item>kpk</item>
+        <item>balochistan</item>
+        <item>gilgit-baltistan</item>
+        <item>ajk</item>
+        <item>islamabad</item>
+    </string-array>
+
+    <string-array name="typesSpinnerItems">
+        <item>Select Specie</item>
+        <item>Alphonso</item>
+        <item>Anmol</item>
+        <item>AnwarRataul</item>
+        <item>BaganPali</item>
+        <item>Chaunsa</item>
+        <item>ChokAnan</item>
+        <item>Collector</item>
+        <item>Dusehri</item>
+        <item>DesiAdaPamato</item>
+        <item>DesiBadam</item>
+        <item>DesiGola</item>
+        <item>DesiBadshah</item>
+        <item>Dilkash</item>
+        <item>Fajri</item>
+        <item>GulabJanhu</item>
+        <item>GulabKhas</item>
+        <item>Lahoti</item>
+        <item>LalBadshah</item>
+        <item>Langra</item>
+        <item>Malda</item>
+        <item>MuhammadWole</item>
+        <item>NawabPuri</item>
+        <item>Neelum</item>
+        <item>RaniPhool</item>
+        <item>Sindhri</item>
+        <item>Saroli</item>
+        <item>Sawarnarika</item>
+        <item>SalehBhai</item>
+        <item>Saib</item>
+        <item>Shan-e-Khuda</item>
+        <item>Taimuria</item>
+        <item>Toofan</item>
+        <item>Wanghi</item>
+        <item>Zafran</item>
+
+    </string-array>
+
+    <string-array name="specieSpinnerItems">
+        <item>Alphonso</item>
+        <item>Anmol</item>
+        <item>AnwarRataul</item>
+        <item>BaganPali</item>
+        <item>Chaunsa</item>
+        <item>ChokAnan</item>
+        <item>Collector</item>
+        <item>Dusehri</item>
+        <item>DesiAdaPamato</item>
+        <item>DesiBadam</item>
+        <item>DesiGola</item>
+        <item>DesiBadshah</item>
+        <item>Dilkash</item>
+        <item>Fajri</item>
+        <item>GulabJanhu</item>
+        <item>GulabKhas</item>
+        <item>Lahoti</item>
+        <item>LalBadshah</item>
+        <item>Langra</item>
+        <item>Malda</item>
+        <item>MuhammadWole</item>
+        <item>NawabPuri</item>
+        <item>Neelum</item>
+        <item>RaniPhool</item>
+        <item>Sindhri</item>
+        <item>Saroli</item>
+        <item>Sawarnarika</item>
+        <item>SalehBhai</item>
+        <item>Saib</item>
+        <item>Shan-e-Khuda</item>
+        <item>Taimuria</item>
+        <item>Toofan</item>
+        <item>Wanghi</item>
+        <item>Zafran</item>
+
+    </string-array>
+</resources>

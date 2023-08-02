@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical">
 
     <TextureView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="14"
+        android:layout_weight="5"
         android:id="@+id/texture"
         />
     <LinearLayout
@@ -28,15 +27,17 @@
             android:id="@+id/btnTake"
             android:backgroundTint="#2a9df4"
             android:text="Take Photo"
+            android:background="@drawable/buttoncolor"
             android:textColor="@android:color/white"
             android:layout_marginRight="5dp"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/buttoncolor"
             android:layout_weight="1"
             android:id="@+id/btnGallary"
             android:backgroundTint="#2a9df4"
-            android:text="Gallary"
+            android:text="Gallery"
             android:textColor="@android:color/white"
             android:layout_marginRight="5dp"/>
     </LinearLayout>

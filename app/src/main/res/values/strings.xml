@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">dialougbox</string>
+    <string name="app_name">MangoSurveyour</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload">Upload</string>
+    <!--    <string name="app_name">dialougbox</string>-->
     <string name="Select1">Select Garden</string>
     <string name="Select2">Select Specie</string>
+    <string name="mySpinnerPrompt">Select  Province</string>
+    <string name="mySpinnerPrompt2">Select Specie</string>
 
 </resources>

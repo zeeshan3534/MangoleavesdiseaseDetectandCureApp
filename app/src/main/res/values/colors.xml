@@ -6,11 +6,27 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="pink">#FF00D4</color>
-    <color name="orange">#FF8400</color>
     <color name="green">#E1E1E1</color>
-    <color name = "Honeydew">#b9c4b9</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orginal">#b9c4b9</color>
+    <color name="lightoriginal">#f5faf5</color>
     <color name = "navigation">#9aad9a</color>
+    <color name= "green2">#B42E7806</color>
+    <color name="tint">#56EF51</color>
+    <color name="yellow">#E4FFEB3B</color>
+    <color name="yellow2">#FFEB3B</color>
+    <color name="yellowtint">#8DFFEB3B</color>
+    <color name="signup">#13484f</color>
+    <color name="reportbackgroun">#EFF1F0</color>
+    <color name="primary">#01AED8</color>
+    <color name= "greenbutton">#AFE1AF</color>
+    <color name= "cardviewgreen">#EFF1F0</color>
+    <color name= "cardviewgreens1">#CFD4D2</color>
+    <color name= "cardviewgreen2">#AFB8B5</color>
+    <color name= "reportcolor">#8E9C97</color>
+    <color name= "first">#7E8D88</color>
+    <color name= "second">#AFB8B5</color>
+    <color name= "third">#CFD4D2</color>
+
 
 </resources>
